@@ -19,6 +19,21 @@
     text-decoration: underline;
 }
 
+.navbar-icon {
+    padding-left: 0;
+}
+
+#banner {
+    background-image: url("https://i.ibb.co/h7FvBtJ/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .bn632-hover {
     font-size: 16px;
     font-weight: 600;

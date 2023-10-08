@@ -9,7 +9,7 @@ const NotFound = () => {
                     <img className="inline-block xl:w-5/6 lg:w-5/6 md:w-5/6 w-5/6" src="https://i.ibb.co/WG16Vpv/Error-Alien-Spaceship.png" alt="page-not-found" />
                 </div>
                 <p className="font-poppins text-4xl my-5">Page not found!</p>
-                <Link to="/"><button className="bn632-hover bn28 px-10 py-[8px] font-poppins">Go back <FaArrowRight className="inline-block"></FaArrowRight></button></Link>
+                <Link to="/"><button className="bn632-hover bn28 px-7 py-[8px] font-poppins">Go back <FaArrowRight className="inline-block"></FaArrowRight></button></Link>
             </div>
         </div>
     );
