@@ -36,6 +36,10 @@ const Navbar = () => {
             });
     };
 
+    if (user) {
+        setProfileAvatar(user.photoURL);
+    }
+
     return (
         <nav className="md:container md:mx-auto 2xl:px-0 xl:px-0 lg:px-5 md:px-5 px-5">
             <div className="navbar bg-base-100">
@@ -48,7 +52,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="text-3xl font-pasifico text-[#FF5A60]">aayojan</a>
+                    <a><img src="https://i.ibb.co/Prj7Hcm/logo1.png" className="inline-block w-20" alt="logo" /></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
