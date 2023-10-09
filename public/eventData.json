@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Wedding ceremony",
+        "hotel_name": "Hotel Saket",
+        "short_description": "We make your events smart & impactful by personalised event management services.",
+        "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
+        "hotel": "https://i.ibb.co/WyT7d7Z/image1.png",
+        "price": 11054
+    },
+    {
+        "id": 2,
+        "title": "Birthday party for kids",
+        "hotel_name": "Hotel Shyam",
+        "short_description": "We make your events smart & impactful by personalised event management services.",
+        "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
+        "hotel": "https://i.ibb.co/VBHZtwh/image2.png",
+        "price": 4368
+    },
+    {
+        "id": 3,
+        "title": "Graduation Ceremony",
+        "hotel_name": "Divine Vatika",
+        "short_description": "We make your events smart & impactful by personalised event management services.",
+        "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
+        "hotel": "https://i.ibb.co/5cstLQ0/image3.png",
+        "price": 7681
+    },
+    {
+        "id": 4,
+        "title": "Anniversary Celebration",
+        "hotel_name": "Sangam Castle",
+        "short_description": "We make your events smart & impactful by personalised event management services.",
+        "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
+        "hotel": "https://i.ibb.co/jHQDZb9/image4.png",
+        "price": 2157
+    },
+    {
+        "id": 5,
+        "title": "Baby Shower",
+        "hotel_name": "Om Sai Resort",
+        "short_description": "We make your events smart & impactful by personalised event management services.",
+        "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
+        "hotel": "https://i.ibb.co/K0xHX9k/image5.png",
+        "price": 8435
+    },
+    {
+        "id": 6,
+        "title": "Retirement Party",
+        "hotel_name": "Paradise Restaurant",
+        "short_description": "We make your events smart & impactful by personalised event management services.",
+        "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
+        "hotel": "https://i.ibb.co/VQrBKxg/image6.png",
+        "price": 5435
+    },
+    {
+        "id": 7,
+        "title": "Engagement Party",
+        "hotel_name": "The Wander Inn",
+        "short_description": "We make your events smart & impactful by personalised event management services.",
+        "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
+        "hotel": "https://i.ibb.co/0Gh4cNK/image7.png",
+        "price": 12405
+    },
+    {
+        "id": 8,
+        "title": "Family Reunion",
+        "hotel_name": "Resort Rendezvous",
+        "short_description": "We make your events smart & impactful by personalised event management services.",
+        "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
+        "hotel": "https://i.ibb.co/yPZpKP9/image8.png",
+        "price": 5405
+    }
+]

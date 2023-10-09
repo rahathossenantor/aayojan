@@ -1,9 +1,9 @@
 
-const Weddings = () => {
+const Parties = () => {
     return (
         <div>
         </div>
     );
 };
 
-export default Weddings;
+export default Parties;

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaGoogle, FaGithub, FaEyeSlash, FaEye } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
@@ -9,6 +9,8 @@ const Register = () => {
     const [isShow, setIsShow] = useState(false);
     const [errorStatus, setRrrorStatus] = useState("");
     const {setProfileAvatar, registerUserWithEmailAndPass, signInUserWithGoogle, signInUserWithGitHub } = useContext(AuthContext);
+
+    const navigate = useNavigate();
 
     const handleEmailPassRegister = (event) => {
         event.preventDefault();
@@ -51,6 +53,7 @@ const Register = () => {
                     confirmButtonText: "Close"
                 });
                 setProfileAvatar(res.user.photoURL);
+                navigate("/");
             })
             .catch(err => setRrrorStatus(err.message));
     };
@@ -66,6 +69,7 @@ const Register = () => {
                     icon: "success",
                     confirmButtonText: "Close"
                 });
+                navigate("/");
             })
             .catch(err => setRrrorStatus(err.message));
     };
@@ -81,6 +85,7 @@ const Register = () => {
                     icon: "success",
                     confirmButtonText: "Close"
                 });
+                navigate("/");
             })
             .catch(err => setRrrorStatus(err.message));
     };

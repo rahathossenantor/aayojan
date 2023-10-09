@@ -3,16 +3,19 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import Swal from "sweetalert2";
 
-const links = <>
-    <NavLink to="/"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Home</li></NavLink>
-    <NavLink to="/about"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">About</li></NavLink>
-    <NavLink to="/contact"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Contact</li></NavLink>
-    <NavLink to="/login"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Login</li></NavLink>
-    <NavLink to="/register"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Register</li></NavLink>
-</>
-
 const Navbar = () => {
     const { user, profileAvatar, setProfileAvatar, signOutUser } = useContext(AuthContext);
+
+    const links = <>
+        <NavLink to="/"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Home</li></NavLink>
+        <NavLink to="/about"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">About</li></NavLink>
+        <NavLink to="/contact"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Contact</li></NavLink>
+        <NavLink to="/login"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Login</li></NavLink>
+        <NavLink to="/register"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Register</li></NavLink>
+        {
+            user && <NavLink to="/profile"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Profile</li></NavLink>
+        }
+    </>
 
     // logout user
     const logOut = () => {
