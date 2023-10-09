@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaEyeSlash, FaEye, FaGoogle, FaGithub } from "react-icons/fa";
 import { useContext, useState } from "react";
 import Swal from "sweetalert2";
@@ -9,6 +9,9 @@ const Login = () => {
     const [errorStatus, setRrrorStatus] = useState("");
 
     const navigate = useNavigate();
+    const location = useLocation();
+
+    console.log(location);
 
     const { setProfileAvatar, signInUserWithGoogle, signInUserWithGitHub, signInUserWithEmailAndPass } = useContext(AuthContext);
 
@@ -37,7 +40,7 @@ const Login = () => {
                     confirmButtonText: "Close"
                 });
                 setProfileAvatar(res.user.photoURL);
-                navigate("/");
+                navigate(location?.state ? location.state : "/");
             })
             .catch(err => setRrrorStatus(err.message));
     };
@@ -53,7 +56,7 @@ const Login = () => {
                     confirmButtonText: "Close"
                 });
                 setProfileAvatar(res.user.photoURL);
-                navigate("/");
+                navigate(location?.state ? location.state : "/");
             })
             .catch(err => setRrrorStatus(err.message));
     };
@@ -69,7 +72,7 @@ const Login = () => {
                     confirmButtonText: "Close"
                 });
                 setProfileAvatar(res.user.photoURL);
-                navigate("/");
+                navigate(location?.state ? location.state : "/");
             })
             .catch(err => setRrrorStatus(err.message));
     };

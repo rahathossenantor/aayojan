@@ -5,8 +5,6 @@ const Profile = () => {
     const { user } = useContext(AuthContext);
     const { displayName, photoURL, email } = user;
 
-    console.log(user);
-
     return (
         <div className="md:container md:mx-auto 2xl:px-0 xl:px-0 lg:px-5 md:px-5 px-5">
             <div className="font-poppins py-10 flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col flex-col gap-5 items-center justify-center">

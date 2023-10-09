@@ -24,8 +24,13 @@ const Register = () => {
         // reset error status
         setRrrorStatus("");
 
+        const specialCharacterRegex = /[!@#$%^&*()_+{}\\[\]:;<>,.?~\\-]/;
+
         if (pass.length < 6) {
             setRrrorStatus("Password must be at least 6 characters!");
+            return;
+        } else if (!/[A-Z]/.test(pass)) {
+            setRrrorStatus("Your password should have at least one upper case character.")
             return;
         }
         // else if (!terms) {
