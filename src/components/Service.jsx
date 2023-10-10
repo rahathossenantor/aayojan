@@ -1,11 +1,21 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Service = ({data}) => {
-    const {id, title, hotel_name, hotel, short_description, price} = data;
+    useEffect(() => {
+        AOS.init({
+            offset: 300,
+            duration: 1000
+        });
+    }, []);
+
+    const {id, title, hotel_name, hotel, short_description, price, animation} = data;
 
     return (
-        <div className="rounded-xl shadow-xl font-inter">
+        <div data-aos={animation} className="rounded-xl shadow-xl font-inter">
             <figure className="w-full">
                 <div className="rounded-md flex items-center justify-center">
                     <img className="inline-block w-full rounded-lg rounded-b-none" src={hotel} alt="event-image" />

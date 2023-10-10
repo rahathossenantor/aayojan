@@ -4,8 +4,18 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import Swal from "sweetalert2";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Register = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 120,
+            duration: 1200
+        });
+    }, []);
+
     const [isShow, setIsShow] = useState(false);
     const [errorStatus, setRrrorStatus] = useState("");
     const {setProfileAvatar, registerUserWithEmailAndPass, signInUserWithGoogle, signInUserWithGitHub } = useContext(AuthContext);
@@ -24,13 +34,18 @@ const Register = () => {
         // reset error status
         setRrrorStatus("");
 
-        const specialCharacterRegex = /[!@#$%^&*()_+{}\\[\]:;<>,.?~\\-]/;
+        // const specialCharacterRegex = /[!@#$%^&*()_+{}\\[\]:;<>,.?~\\-]/;
 
         if (pass.length < 6) {
             setRrrorStatus("Password must be at least 6 characters!");
             return;
-        } else if (!/[A-Z]/.test(pass)) {
-            setRrrorStatus("Your password should have at least one upper case character.")
+        }
+        else if (!/[A-Z]/.test(pass)) {
+            setRrrorStatus("Password must have at least one upper case character!");
+            return;
+        }
+        else if (!/[!@#$%^&*()_+{}\\[\]:;<>,.?~\\-]/.test(pass)) {
+            setRrrorStatus("Password must have at least one special character!");
             return;
         }
         // else if (!terms) {
@@ -100,7 +115,7 @@ const Register = () => {
             <div className="text-center mb-5">
                 <h2 className="text-4xl font-medium font-inter">Register now!</h2>
             </div>
-            <div className="bg-base-100 2xl:w-96 xl:w-96 lg:w-[380px] md:w-[380px] w-[340px] shadow-2xl rounded-xl border">
+            <div data-aos="fade-in" className="bg-base-100 2xl:w-96 xl:w-96 lg:w-[380px] md:w-[380px] w-[340px] shadow-2xl rounded-xl border">
                 <form onSubmit={handleEmailPassRegister} className="p-6">
                     <div className="form-control">
                         <label className="label py-1">

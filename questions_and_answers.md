@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `{}`
 
-<i>Write your explanation here</i>
+<i>It seems like there's a typo in your code. You've declared a variable called `greeting`, but then you assign an empty object to a variable called `greetign`, then when you `console.log(greetign)`, it will output an empty object `{}` to the console.</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: `"12"`
 
-<i>Write your explanation here</i>
+<i>In this this case, the + operator performs string concatenation instead of numeric edition, so the result will be the string "12".</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i>The change to info.favoriteFood doesn't affect the original food array, so the array remains unchanged.</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>The function returns a string with the word "undefined", because name is not provided as an argument, so it takes the default value of "undefined".</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>This is because count has been incremented for each truthy value in the nums array.</i>
 
 </p>
 </details>

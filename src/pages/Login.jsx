@@ -3,15 +3,23 @@ import { FaEyeSlash, FaEye, FaGoogle, FaGithub } from "react-icons/fa";
 import { useContext, useState } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../providers/AuthProvider";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Login = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 120,
+            duration: 1200
+        });
+    }, []);
+
     const [isShow, setIsShow] = useState(false);
     const [errorStatus, setRrrorStatus] = useState("");
 
     const navigate = useNavigate();
     const location = useLocation();
-
-    console.log(location);
 
     const { setProfileAvatar, signInUserWithGoogle, signInUserWithGitHub, signInUserWithEmailAndPass } = useContext(AuthContext);
 
@@ -82,7 +90,7 @@ const Login = () => {
             <div className="text-center mb-5">
                 <h2 className="text-4xl font-medium font-inter">Login now!</h2>
             </div>
-            <div className="bg-base-100 2xl:w-96 xl:w-96 lg:w-[380px] md:w-[380px] w-[340px] shadow-2xl rounded-xl border">
+            <div data-aos="fade-in" className="bg-base-100 2xl:w-96 xl:w-96 lg:w-[380px] md:w-[380px] w-[340px] shadow-2xl rounded-xl border">
                 <form onSubmit={handleEmailPassLogin} className="p-6">
                     <div className="form-control">
                         <label className="label pb-1">

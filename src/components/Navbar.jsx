@@ -8,8 +8,7 @@ const Navbar = () => {
 
     const links = <>
         <NavLink to="/"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Home</li></NavLink>
-        <NavLink to="/about"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">About</li></NavLink>
-        <NavLink to="/contact"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Contact</li></NavLink>
+        <NavLink to="/booked-parties"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Party</li></NavLink>
         <NavLink to="/login"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Login</li></NavLink>
         <NavLink to="/register"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Register</li></NavLink>
         <NavLink to="/profile"><li className="text-lg px-3 hover:text-[#FF5A60] font-poppins">Profile</li></NavLink>
@@ -65,7 +64,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <div className="2xl:inline-flex xl:inline-flex lg:hidden md:inline-flex hidden">
-                        <h3 className="mr-2 text-lg font-poppins">{user ? user.displayName.length > 15 ? user.displayName.slice(0, 15) : user.displayName : ""}</h3>
+                        <h3 className="mr-2 text-lg font-poppins">{user ? user?.displayName?.length > 15 ? user.displayName.slice(0, 15) : user.displayName : ""}</h3>
                     </div>
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2 2xl:inline-flex xl:inline-flex lg:inline-flex md:inline-flex hidden">
                         <div className="w-10 rounded-full">

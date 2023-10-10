@@ -6,7 +6,8 @@
         "short_description": "We make your events smart & impactful by personalised event management services.",
         "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
         "hotel": "https://i.ibb.co/WyT7d7Z/image1.png",
-        "price": 11054
+        "price": 11054,
+        "animation": "fade-down"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "short_description": "We make your events smart & impactful by personalised event management services.",
         "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
         "hotel": "https://i.ibb.co/VBHZtwh/image2.png",
-        "price": 4368
+        "price": 4368,
+        "animation": "fade-up"
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "short_description": "We make your events smart & impactful by personalised event management services.",
         "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
         "hotel": "https://i.ibb.co/5cstLQ0/image3.png",
-        "price": 7681
+        "price": 7681,
+        "animation": "fade-down"
     },
     {
         "id": 4,
@@ -33,7 +36,8 @@
         "short_description": "We make your events smart & impactful by personalised event management services.",
         "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
         "hotel": "https://i.ibb.co/jHQDZb9/image4.png",
-        "price": 2157
+        "price": 2157,
+        "animation": "fade-up"
     },
     {
         "id": 5,
@@ -42,7 +46,8 @@
         "short_description": "We make your events smart & impactful by personalised event management services.",
         "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
         "hotel": "https://i.ibb.co/K0xHX9k/image5.png",
-        "price": 8435
+        "price": 8435,
+        "animation": "fade-down"
     },
     {
         "id": 6,
@@ -51,7 +56,8 @@
         "short_description": "We make your events smart & impactful by personalised event management services.",
         "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
         "hotel": "https://i.ibb.co/VQrBKxg/image6.png",
-        "price": 5435
+        "price": 5435,
+        "animation": "fade-up"
     },
     {
         "id": 7,
@@ -60,7 +66,8 @@
         "short_description": "We make your events smart & impactful by personalised event management services.",
         "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
         "hotel": "https://i.ibb.co/0Gh4cNK/image7.png",
-        "price": 12405
+        "price": 12405,
+        "animation": "fade-down"
     },
     {
         "id": 8,
@@ -69,6 +76,7 @@
         "short_description": "We make your events smart & impactful by personalised event management services.",
         "description": "Discover comfortable accommodations for your next getaway with our hotel booking service. From luxurious suites to budget-friendly options, we offer a wide range of choices to suit your preferences. Enjoy a seamless booking experience.",
         "hotel": "https://i.ibb.co/yPZpKP9/image8.png",
-        "price": 5405
+        "price": 5405,
+        "animation": "fade-up"
     }
 ]

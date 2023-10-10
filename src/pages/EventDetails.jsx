@@ -1,4 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { getSavedData, saveItemToLocalStorage } from "../utilities/localStorage";
+import Swal from "sweetalert2";
 
 const EventDetails = () => {
     const eventData = useLoaderData();
@@ -8,6 +10,27 @@ const EventDetails = () => {
 
     const selectedEvent = eventData.find(e => e.id === currentEventId);
     const { title, hotel, hotel_name, description, price } = selectedEvent;
+
+    const addItemToLocalStorage = (item) => {
+        const prevData = getSavedData();
+        const isExist = prevData.find(e => e.id === item.id);
+        if (!isExist) {
+            saveItemToLocalStorage(item);
+            Swal.fire({
+                title: "Success!",
+                text: "Event successfully booked!",
+                icon: "success",
+                confirmButtonText: "Close"
+            });
+            return;
+        }
+        Swal.fire({
+            title: "Error!",
+            text: "Event already added!",
+            icon: "error",
+            confirmButtonText: "Close"
+        });
+    };
 
     return (
         <div className="md:container md:mx-auto 2xl:px-0 xl:px-0 lg:px-5 md:px-5 px-5">
@@ -20,7 +43,7 @@ const EventDetails = () => {
                     <h2 className="text-2xl font-semibold mb-2">{hotel_name}</h2>
                     <p>{description}</p>
                     <h3 className="font-semibold text-[25px] my-2">${price}</h3>
-                    <button className="bn632-hover bn28 px-[30px] py-[8px]">Book now!</button>
+                    <button onClick={() => addItemToLocalStorage(selectedEvent)} className="bn632-hover bn28 px-[30px] py-[8px]">Book now!</button>
                 </div>
             </div>
         </div>
